@@ -1,0 +1,39 @@
+# Secrets — NEVER commit
+.env
+.env.*.local
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# uv / venv
+.venv/
+venv/
+
+# PDFs (copyrighted material — keep your own copies local)
+pdfs/*.pdf
+
+# IDE
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Claude Code / AI assistants
+.claude/
+CLAUDE.md
+.aider*
+.cursorrules
+
+# Streamlit
+.streamlit/
+
+# Logs
+*.log

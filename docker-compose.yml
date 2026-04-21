@@ -1,0 +1,15 @@
+services:
+  db:
+    image: pgvector/pgvector:pg18
+    container_name: b2meister-db
+    environment:
+      POSTGRES_USER: b2meister
+      POSTGRES_PASSWORD: b2meister
+      POSTGRES_DB: b2meister
+    ports:
+      - "5433:5432"
+    volumes:
+      - b2meister_pgdata:/var/lib/postgresql
+
+volumes:
+  b2meister_pgdata:
